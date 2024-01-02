@@ -11,8 +11,11 @@ public class Main{
         System.out.println("Press 3 for Oils ");
         System.out.println("Press 4 for Nuts ");
         System.out.println("Press 5 for Drinks ");
-        int product = scanner.nextInt();
-        
+        int product_code = scanner.nextInt();
+        String product_name = ShoppingList.list(product_code);
+        double product_price = ShoppingCart.price(product_name);
+        wallet obj = new wallet();
+        obj.bill(product_price);
         scanner.close();
     }
 }
