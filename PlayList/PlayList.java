@@ -47,4 +47,26 @@ public class PlayList {
             return false;
         }
     }
+
+    public void replayCurrent(){
+        if (playlistIterator != null) {
+            if(playlistIterator.hasPrevious()){
+                System.out.println("Replaying: " + playlistIterator.previous());
+                playlistIterator.next();
+            } else{
+                System.out.println("Cannot replay the current song");
+            }
+        } else{
+            System.out.println("No song is currently playing");
+        }
+    }
+
+    public void removeCurrentSong(){
+        if (playlistIterator != null) {
+            playlistIterator.remove();
+            System.out.println("Current song removed from the playlist");
+        } else{
+            System.out.println("No song is currently playing");
+        }
+    }
 }
