@@ -10,5 +10,12 @@ public class hashMap {
         for(String key : listMap.keySet()){
             System.out.println(key + " - " + listMap.get(key));
         }
+
+        System.out.println("------------");
+
+        listMap.remove("Rasitha");
+        for(String key : listMap.keySet()){
+            System.out.println(key + " - " + listMap.get(key));
+        }
     }
 }
