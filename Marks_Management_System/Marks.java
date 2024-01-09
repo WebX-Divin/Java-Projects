@@ -1,4 +1,4 @@
-package Abstract;
+package Marks_Management_System;
 
 public abstract class Marks {
 

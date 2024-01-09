@@ -1,4 +1,4 @@
-package ArrayList;
+package Shopping_Cart;
 
 import java.util.*;
 public class ShoppingCart {
